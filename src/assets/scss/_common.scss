@@ -1,0 +1,42 @@
+body {
+  background-color: var(--mainBg);
+  color: var(--black);
+  cursor: cell;
+  overflow-y: scroll;
+
+  // 스크롤바 스타일
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #74c9a6, #9dbcdb);
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--pointColor);
+  }
+}
+
+#main {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.text_top {
+  border-top: 1px solid #000;
+  padding-top: 30px; /* 상단 패딩 */
+}
+
+.line_top {
+  width: 100%;
+  border-top: 1px solid #73737368;
+  padding-top: 30px; /* 상단 패딩 */
+}
